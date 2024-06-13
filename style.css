@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'Karla';
+    background-color: hsl(148, 38%, 91%);
+    font-size: 14px;
+   
+    
+}
+
+/* Pop up box */
+
+#popup {
+    width: 300px;
+    height: 100px;
+    background-color: rgb(63, 63, 63);
+    border-radius: 10px; 
+    position: absolute;
+    z-index: 1;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%, -2%);
+    color: white;
+    padding: 15px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    visibility: hidden;
+    
+    
+}
+
+#btn-close {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    position: fixed;
+    top: 20px;
+    right: 18px;
+}
+
+textarea  
+{  
+   font-family:"Karla" ;  
+   font-size: 14px;   
+}
+
+.container {
+    width: 70%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 0;
+    
+}
+
+h1 {
+   color: hsl(187, 24%, 22%);
+   margin-bottom: 10px;
+   font-size: 25px;
+}
+
+span {
+    color: hsl(169, 82%, 27%);
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+form {
+    color: hsl(186, 15%, 59%);
+}
+
+label {
+    
+    margin: 10px 0;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid hsl(186, 15%, 59%);
+    margin-bottom: 5px;
+    border-radius: 5px;
+    
+}
+
+
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="radio"]:hover,
+textarea:hover,
+.query-options:hover {
+    border: 1px solid hsl(187, 24%, 22%);
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: hsl(187, 24%, 22%);
+    cursor: pointer;
+}
+
+
+
+
+/* Name Section*/
+
+.name-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+
+.input-name {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+
+/* Email section */
+
+.email-wrapper {
+   display: flex;
+   flex-direction: column;
+    
+}
+
+/* Query Type Section */
+
+h4 {
+   
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.query-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.query-wrapper h4 {
+    width: 100%;
+}
+
+
+.query-options {
+    border: 1px solid hsl(186, 15%, 59%);
+    border-radius: 5px;
+    width: 48%;
+    display: flex;
+    padding-left: 15px;
+    align-items: center;
+}
+
+
+
+#enquiry, #support {
+    margin-right: 10px;
+    
+}
+
+input[type="radio"] {
+   accent-color: green;
+}
+
+ /* Makes radio buttons align */
+
+ .Radio {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .Radio-Input {
+    margin: 0 0.5em 0;
+    
+  }
+
+
+
+/* Message Section */
+
+#message {
+    width: 100%;
+}
+
+.message-section textarea {
+    margin: 10px 0 30px 0;
+    
+    
+}
+
+/* consent section */
+.consent-section {
+    display: flex;
+}
+
+input[type="checkbox"] {
+    accent-color: green;
+ }
+
+
+#submit {
+    width: 100%;
+    border: none;
+    background-color: hsl(169, 82%, 27%);
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+
+/* error messages */
+
+#error-message,
+#error-message-two,
+#error-message-three,
+#error-message-four,
+#error-message-five,
+#error-message-six {
+    font-size: 12px;
+    color: red;
+    margin-bottom: 10px;
+    visibility: hidden;
+}
+
+
+#error-message-five {
+    margin-top: -30px;
+}
+
+#consent {
+    margin-left: 0;
+}
+
+
+/* active states */
+
+ 
+
+
+
+
+/* mobile devices */
+
+@media screen and (max-width: 600px) {
+
+    .container {
+        
+        margin: 15% 0;
+    }
+
+    .name-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input-name {
+        width: 100%;
+    }
+
+    .query-options {
+        width: 100%;
+        margin: 8px 0;
+    }
+
+    h4 {
+        margin-top: 35px;
+    }
+
+    textarea {
+        height: 200px;
+    }
+
+    .consent-section #consent {
+        margin-right: 15px;
+    }
+
+   
+}
